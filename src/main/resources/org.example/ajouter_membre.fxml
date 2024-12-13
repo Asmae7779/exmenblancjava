@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.example.controller.AjouterMembre"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <VBox alignment="CENTER" spacing="20" layoutX="150" layoutY="100">
+        <Label text="Ajouter un Membre" styleClass="title"/>
+
+        <HBox spacing="10" alignment="CENTER">
+            <Label text="Nom :"/>
+            <TextField fx:id="nomField" promptText="Entrez le nom"/>
+        </HBox>
+
+        <HBox spacing="10" alignment="CENTER">
+            <Label text="Prénom :"/>
+            <TextField fx:id="prenomField" promptText="Entrez le prénom"/>
+        </HBox>
+
+        <HBox spacing="10" alignment="CENTER">
+            <Label text="Email :"/>
+            <TextField fx:id="emailField" promptText="Entrez l'email"/>
+        </HBox>
+
+        <HBox spacing="10" alignment="CENTER">
+            <Label text="Téléphone :"/>
+            <TextField fx:id="phoneField" promptText="Entrez le téléphone"/>
+        </HBox>
+
+        <Button text="Ajouter Membre" fx:id="ajouterButton" onAction="#handleAjouterMembre" styleClass="button"/>
+    </VBox>
+
+</AnchorPane>
